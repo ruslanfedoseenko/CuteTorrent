@@ -448,7 +448,7 @@
                 <bool>true</bool>
                </property>
                <property name="currentIndex">
-                <number>3</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="tab">
                 <property name="mouseTracking">
@@ -458,9 +458,16 @@
                  <string>TAB_INFO</string>
                 </attribute>
                 <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="8" column="0">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>INFO_SEED_COUNT</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="0" column="0" colspan="5">
                   <layout class="QGridLayout" name="gridLayout_4">
-                   <item row="1" column="1">
+                   <item row="1" column="3">
                     <widget class="QLabel" name="availibilityLabel">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
@@ -476,7 +483,7 @@
                      </property>
                     </widget>
                    </item>
-                   <item row="0" column="1">
+                   <item row="0" column="3">
                     <widget class="QLabel" name="progressLabel">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
@@ -495,23 +502,7 @@
                      </property>
                     </widget>
                    </item>
-                   <item row="1" column="0">
-                    <widget class="QWidget" name="widget_2" native="true">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>15</height>
-                      </size>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="0">
+                   <item row="0" column="2">
                     <widget class="QWidget" name="widget" native="true">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -528,6 +519,37 @@
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
+                     <zorder>label_13</zorder>
+                    </widget>
+                   </item>
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>AVALIBALITY</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QWidget" name="widget_2" native="true">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>15</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0" colspan="2">
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>PIECES</string>
+                     </property>
                     </widget>
                    </item>
                   </layout>
@@ -539,15 +561,15 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="3">
-                  <widget class="QLabel" name="label_8">
+                 <item row="6" column="4">
+                  <widget class="QLabel" name="pathLabel">
                    <property name="text">
-                    <string>INFO_UPLOADED</string>
+                    <string/>
                    </property>
                   </widget>
                  </item>
-                 <item row="6" column="4">
-                  <widget class="QLabel" name="pathLabel">
+                 <item row="2" column="1" colspan="2">
+                  <widget class="QLabel" name="downloadedBytesLabel">
                    <property name="text">
                     <string/>
                    </property>
@@ -560,6 +582,13 @@
                    </property>
                   </widget>
                  </item>
+                 <item row="2" column="3">
+                  <widget class="QLabel" name="label_8">
+                   <property name="text">
+                    <string>INFO_UPLOADED</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="3" column="3">
                   <widget class="QLabel" name="label_9">
                    <property name="text">
@@ -567,24 +596,10 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="1" colspan="2">
-                  <widget class="QLabel" name="downloadedBytesLabel">
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="6" column="0">
                   <widget class="QLabel" name="label_5">
                    <property name="text">
                     <string>INFO_TOTAL_SIZE</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="4">
-                  <widget class="QLabel" name="uploadSpeedLabel">
-                   <property name="text">
-                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -602,8 +617,8 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="4">
-                  <widget class="QLabel" name="timeleftLabel">
+                 <item row="3" column="4">
+                  <widget class="QLabel" name="uploadSpeedLabel">
                    <property name="text">
                     <string/>
                    </property>
@@ -616,13 +631,6 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="0">
-                  <widget class="QLabel" name="label_2">
-                   <property name="text">
-                    <string>INFO_DOWNLOADED</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="1" column="3">
                   <widget class="QLabel" name="label_7">
                    <property name="text">
@@ -632,6 +640,34 @@
                  </item>
                  <item row="3" column="1" colspan="2">
                   <widget class="QLabel" name="downloadSpeedLabel">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
+                  <widget class="QLabel" name="timeleftLabel">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>INFO_DOWNLOADED</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="3">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>INFO_PEER_COUNT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="1" colspan="2">
+                  <widget class="QLabel" name="seedCoutLabel">
                    <property name="text">
                     <string/>
                    </property>
@@ -651,31 +687,10 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="8" column="3">
-                  <widget class="QLabel" name="label_11">
+                 <item row="10" column="0">
+                  <widget class="QLabel" name="label_12">
                    <property name="text">
-                    <string>INFO_PEER_COUNT</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="8" column="1" colspan="2">
-                  <widget class="QLabel" name="seedCoutLabel">
-                   <property name="text">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="8" column="0">
-                  <widget class="QLabel" name="label_10">
-                   <property name="text">
-                    <string>INFO_SEED_COUNT</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="9" column="0">
-                  <widget class="QLabel" name="label_6">
-                   <property name="text">
-                    <string>INFO_DESCRIBTION</string>
+                    <string>INFO_HASH</string>
                    </property>
                   </widget>
                  </item>
@@ -695,10 +710,10 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="10" column="0">
-                  <widget class="QLabel" name="label_12">
+                 <item row="9" column="0">
+                  <widget class="QLabel" name="label_6">
                    <property name="text">
-                    <string>INFO_HASH</string>
+                    <string>INFO_DESCRIBTION</string>
                    </property>
                   </widget>
                  </item>

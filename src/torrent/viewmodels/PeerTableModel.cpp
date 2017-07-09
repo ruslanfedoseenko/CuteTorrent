@@ -1,6 +1,16 @@
 ﻿#include "PeerTableModel.h"
 #include "IpItemDelegate.h"
 #include "IpToCountryResolver.h"
+
+QVariant PeerTableModel::data(const QModelIndex& index, int role) const
+{
+	if (role == Qt::TextAlignmentRole && index.column() > CLIENT_NAME)
+	{
+		return Qt::AlignCenter;
+	}
+	return QStandardItemModel::data(index, role);
+}
+
 PeerTableModel::PeerTableModel(QObject* parent)
 	: QStandardItemModel(0, COLUMN_COUNT)
 	  , m_pIpToCountryResolver(IpToCountryResolver::getInstance())

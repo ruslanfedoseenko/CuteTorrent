@@ -142,7 +142,7 @@ public:
 	QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 	QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const override;
 	bool removeRow(const QModelIndex& index, bool delFiles);
-
+	//Qt::ItemFlags flags(const QModelIndex& index) const override;
 	enum Role
 	{
 		TorrentRole = Qt::UserRole,

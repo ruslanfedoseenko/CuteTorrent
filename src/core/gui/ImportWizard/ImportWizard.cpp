@@ -26,6 +26,6 @@ ImportWizard::ImportWizard(QWidget* parent)
 
 void ImportWizard::NavigateHelp()
 {
-	QDesktopServices::openUrl(QUrl("http://cutetorrent.info/importing/"));
+	QDesktopServices::openUrl(QUrl("http://cutetorrent.info/torrent-import/"));
 }
 

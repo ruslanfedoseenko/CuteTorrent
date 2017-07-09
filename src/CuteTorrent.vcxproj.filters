@@ -915,9 +915,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_quazipfile.cpp">
       <Filter>GeneratedFiles\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_RaitingDialog.cpp">
-      <Filter>GeneratedFiles\Release</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_RaitingWidget.cpp">
       <Filter>GeneratedFiles\Release</Filter>
     </ClCompile>
@@ -1080,9 +1077,6 @@
       <Filter>GeneratedFiles</Filter>
     </CustomBuild>
     <CustomBuild Include="GeneratedFiles\ui_OpenTorrentDialog.h">
-      <Filter>GeneratedFiles</Filter>
-    </CustomBuild>
-    <CustomBuild Include="GeneratedFiles\ui_RaitingDialog.h">
       <Filter>GeneratedFiles</Filter>
     </CustomBuild>
     <CustomBuild Include="GeneratedFiles\ui_RssFeedSettingsDialog.h">

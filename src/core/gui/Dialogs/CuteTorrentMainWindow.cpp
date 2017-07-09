@@ -389,6 +389,7 @@ void CuteTorrentMainWindow::setupTabelWidgets()
 {
 	QList<int> defaultTrackerColumnSizes = QList<int>() << 320 << 60 << 50 << 50;
 	m_pTrackersHeader = new EditableHeaderView(Qt::Horizontal, trackerTableWidget);
+	trackerTableWidget->setSortingEnabled(false);
 	trackerTableWidget->setHorizontalHeader(m_pTrackersHeader);
 	loadHeaderState("trackers", m_pTrackersHeader, defaultTrackerColumnSizes);
 	trackerTableWidget->setContextMenuPolicy(Qt::ActionsContextMenu);
@@ -420,6 +421,7 @@ void CuteTorrentMainWindow::setupTabelWidgets()
 	peerTableView->setHorizontalHeader(m_pPeersHeader);
 	loadHeaderState("peers", m_pPeersHeader, defaultPeerColumnSizes);
 	peerTableView->setContextMenuPolicy(Qt::ActionsContextMenu);
+	peerTableView->setSortingEnabled(true);
 	addPeer = new QAction(m_pStyleEngine->getIcon("add_torrent"), tr("ADD_PEER"), peerTableView);
 	addPeer->setObjectName("ACTION_PEER_ADD");
 	addWebSeed = new QAction(m_pStyleEngine->getIcon("add_torrent"), tr("ADD_WEB_SEED"), peerTableView);

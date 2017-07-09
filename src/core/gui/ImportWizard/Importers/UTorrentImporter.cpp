@@ -142,6 +142,7 @@ void UTorrentImporter::runImport()
 				//				CustomMessageBox::critical(NULL, "Error", StaticHelpers::translateLibTorrentError(ec));
 			}
 		}
+		emit progress("Import Completed", 100);
 	}
 }
 

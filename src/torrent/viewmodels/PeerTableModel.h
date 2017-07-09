@@ -8,6 +8,9 @@
 #include "ServiceCommon.h"
 class PeerTableModel : public QStandardItemModel
 {
+public:
+	QVariant data(const QModelIndex& index, int role) const override;
+private:
 	Q_OBJECT
 public:
 	enum Columns

@@ -29,6 +29,7 @@ void EditableHeaderView::contextMenuEvent(QContextMenuEvent* e)
 
 EditableHeaderView::EditableHeaderView(Qt::Orientation orientation, QWidget* parent): QHeaderView(orientation, parent)
 {
+	setSectionsClickable(true);
 }
 
 EditableHeaderView::EditableHeaderView(QHeaderViewPrivate& dd, Qt::Orientation orientation, QWidget* parent): QHeaderView(dd, orientation, parent)
